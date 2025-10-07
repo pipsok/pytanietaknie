@@ -9,13 +9,13 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageViewPytanie"
         android:layout_width="match_parent"
         android:layout_height="238dp"
         app:srcCompat="@drawable/bryt" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewPytanie"
         android:layout_width="196dp"
         android:layout_height="38dp"
         android:text="Czy ten kot jest ladny"
@@ -27,7 +27,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonTak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TAK" />
@@ -40,7 +40,7 @@
             android:text="" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonNie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NIE" />
@@ -70,5 +70,13 @@
             android:layout_height="wrap_content"
             android:text="nastepne" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:text=""
+        android:textSize="50dp"
+        android:textAlignment="center"/>
 
 </LinearLayout>

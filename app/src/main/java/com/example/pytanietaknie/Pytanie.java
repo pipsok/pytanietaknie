@@ -2,14 +2,14 @@ package com.example.pytanietaknie;
 
 import java.util.ArrayList;
 
-public class Cos {
+public class Pytanie {
     private int idobrazek;
     private String trescpytania;
     private boolean odpowiedz;
     private String podpowiedzi;
     private boolean czyOdpOk;
 
-    public Cos(int idobrazek, String trescpytania, boolean odpowiedz, String podpowiedzi) {
+    public Pytanie(int idobrazek, String trescpytania, boolean odpowiedz, String podpowiedzi) {
         this.idobrazek = idobrazek;
         this.trescpytania = trescpytania;
         this.odpowiedz = odpowiedz;
