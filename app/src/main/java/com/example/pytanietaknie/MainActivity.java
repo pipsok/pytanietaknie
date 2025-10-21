@@ -43,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        pytania.add(new Pytanie(R.drawable.bryt, "Czy ten kot jest ladny 1", true,"ale on jest piekny"));
-        pytania.add(new Pytanie(R.drawable.lysol, "Czy ten kot jest ladny 2", false,"fuj"));
-        pytania.add(new Pytanie(R.drawable.syjamski, "Czy ten kot jest ladny 3", true,"piekniusi"));
+        pytania = Repozytorium.zwrocWszystkiePytania();
         buttonNie = findViewById(R.id.buttonNie);
         buttonTak = findViewById(R.id.buttonTak);
         textViewPytanie = findViewById(R.id.textViewPytanie);
