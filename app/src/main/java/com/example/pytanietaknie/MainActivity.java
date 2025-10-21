@@ -3,6 +3,7 @@ package com.example.pytanietaknie;
 import static android.view.View.INVISIBLE;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -101,7 +102,9 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        textView4.setText(pytania.get(ktorePytanie).getPodpowiedzi());
+                        Intent intent = new Intent(MainActivity.this,PodpowiedzActivity2.class);
+                        intent.putExtra("numerpytania", licznikpytan);
+                        startActivity(intent);
                     }
                 }
         );
